@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../../css/task/table.css" />
+    
+    <style>
+      body{
+        margin: 0;
+        padding: 0;
+      }
+      header{
+        background-color:chartreuse;
+        padding: 10px;
+      }
+      #se1{
+        margin-left: 400px;
+        padding: 5px;
+        padding: 5px 20px;
+        background-color:green;
+
+      }
+       #se2{
+        margin-right: 450px;
+        background-color:green;
+      }
+    </style>
+  </head>
+
+  
+  <body>
+
+     <header style="display: flex; justify-content: space-between;">
+        <button id="se1" onclick="hi1()">Home</button>
+        <button id="se2" onclick="hi()">Result page</button>
+      </header>
+
+    <div id="sec">
+
+     
+      <h1>BIKE DATA ENTRY PAGE</h1>  
+      <div id="sec1">
+        
+        <section class="inp"> <label for="">Bike name </label>
+          <input type="text" id="bkin" /></section>
+          <br>
+        <section class="inp"> <label for="">Bike id </label>
+          <input type="number" id="idin"/></section>
+          <br>
+        <section class="inp"> <label for="">Check in</label>
+          <input type="text" id="chk"/></section>
+          <br>
+        <section class="inp"> <label for="">Check out</label>
+          <input type="text" id="chkot"/></section>
+          <br>
+        <button id="bt">Submit</button>
+        <button id="clear" onclick="clearInput()">Cancel</button>
+      </div>
+
+      <div id="div1">
+
+
+
+      </div>
+      
+     
+
+    </div>
+
+    <script src="../../js/task/table.js"></script>
+  </body>
+</html>
