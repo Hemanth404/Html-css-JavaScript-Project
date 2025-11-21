@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="../css/calculatortask.css">
+    <style>
+       /* .show{
+        display: block;
+        animation: fadeIn 1s ease forwards;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+       } */
+    </style>
+
+</head>
+<body>
+    
+    <div id ="divv">
+
+        <h1 style="text-align: center;">SIMPLE CALCULATOR</h1>
+        <section class ="sec">
+            <label for="num1">ENTER THE NUMBER 1 :</label>
+            <input type="number" name="" id="num1">
+        </section>
+        
+        <section class ="sec">
+            <label for="num1">ENTER THE NUMBER 2 :</label>
+            <input type="number" name="" id="num2">
+        </section>
+
+        <section id="btn">
+            <button class="bt" id="add" onclick="show1()">ADDITION</button>
+            <button class="bt" id="sub" onclick="show2()">SUBTRACTION</button>
+            <button class="bt" id="div1" onclick="show3()">DIVISION</button>
+        </section>
+
+    </div>
+
+    <div id="display">
+                 
+        <main id="dis">
+            <h2 id="dis1"></h2>
+            <h2 id="dis2"></h2>
+            <h2 id="dis3"></h2>
+            <button id="resbt">
+                <a href="../html/calculatortask.html" id="rst">Reset</a>
+            </button>
+        </main>
+        
+
+    </div>
+
+
+
+<script src="../js/task/calculatortask.js"></script>
+</body>
+</html>
