@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Bike Parking - Login / Signup</title>
+  <style>
+    body{margin:0;font-family:Arial,Helvetica,sans-serif;background:#f0f7ff}
+    #main{min-height:100vh;}
+
+    /* NAV BAR */
+    #nav{
+      padding:18px 24px;
+      background:#2874f0;
+      display:flex;
+      justify-content:center;
+      gap:40px;
+      box-shadow:0 4px 10px rgba(0,0,0,0.15);
+    }
+    .mod{
+      background:#fff;
+      padding:10px 20px;
+      border-radius:6px;
+      font-weight:600;
+      cursor:pointer;
+      transition:.2s;
+      box-shadow:0 2px 6px rgba(0,0,0,0.2);
+    }
+    .mod:hover{
+      transform:scale(1.1);
+      background:#ffcc80;
+    }
+
+    /* SECTIONS */
+    #logsec,#signsec{
+      display:flex;
+      justify-content:center;
+      padding-top:50px;
+    }
+
+    /* FORM CARD */
+    #inp1,#inp2{
+      width:420px;
+      background:#ffffff;
+      padding:30px;
+      border-radius:10px;
+      box-shadow:0 8px 20px rgba(0,0,0,0.2);
+      animation:fade .4s ease;
+    }
+
+    @keyframes fade{
+      from{opacity:0;transform:translateY(20px);}to{opacity:1;transform:translateY(0);}
+    }
+
+    h2{text-align:center;margin-top:0;font-size:28px;color:#333}
+
+    label{font-weight:600;color:#333}
+
+    input{
+      width:100%;
+      padding:10px;
+      border-radius:6px;
+      border:1px solid #aaa;
+      margin:6px 0 14px 0;
+      font-size:14px;
+    }
+
+    /* Buttons */
+    button{
+      padding:8px 16px;
+      border:none;
+      border-radius:6px;
+      cursor:pointer;
+      font-weight:600;
+      margin-right:10px;
+    }
+
+    #bt1,#bt1_signup{
+      background:#ccc;
+    }
+    #bt2,#bt2_signup{
+      background:#ff9800;
+      color:#fff;
+    }
+
+  </style>
+</head>
+<body>
+  <div id="main">
+    <div id="nav">
+      <div id="login" class="mod">Login</div>
+      <div id="signup" class="mod">Signup</div>
+    </div>
+
+    <!-- Login Section -->
+    <section id="logsec">
+      <div id="inp1">
+        <h2>Login</h2>
+        <label for="username">Username</label>
+        <input id="username" type="text">
+
+        <label for="password">Password</label>
+        <input id="password" type="password">
+
+        <div>
+          <input type="checkbox" id="remember"> <label for="remember">Remember me</label>
+        </div>
+
+        <div style="text-align:center;margin-top:18px;">
+          <button id="bt1">Cancel</button>
+          <button id="bt2">Login</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Signup Section -->
+    <section id="signsec" style="display:none;">
+      <div id="inp2">
+        <h2>Signup</h2>
+        <label for="newname">Name</label>
+        <input id="newname" type="text">
+
+        <label for="dob">DOB</label>
+        <input id="dob" type="date">
+
+        <label for="age">Age</label>
+        <input id="age" type="number">
+
+        <label for="password1">Password</label>
+        <input id="password1" type="password">
+
+        <label for="repassword">Re-Password</label>
+        <input id="repassword" type="password">
+
+        <div style="text-align:center;margin-top:18px;">
+          <button id="bt1_signup">Cancel</button>
+          <button id="bt2_signup">Submit</button>
+        </div>
+      </div>
+    </section>
+
+  </div>
+
+  <script src="./loginpage.js"></script>
+</body>
+</html>
